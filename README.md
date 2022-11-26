@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://github.com/eligijuslinkevicius/stats-preview-card-component)
+- Live Site URL: (https://eligijuslinkevicius.github.io/stats-preview-card-component/)
 
 ## My process
 
