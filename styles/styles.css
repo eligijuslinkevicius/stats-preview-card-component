@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background-color: hsl(233deg, 47%, 7%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+main {
+  background-color: hsl(244deg, 38%, 16%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 1.8em;
+  padding-bottom: 1.5em;
+}
+main img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 0.5em;
+}
+main .hero-text {
+  padding: 1em 0.8em;
+}
+main .hero-text h1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+main .hero-text h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+main .hero-text .hero-paragraph {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  line-height: 1.75em;
+  opacity: 0.75;
+  padding: 0 1.25em;
+}
+main .stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .stats .stat-heading {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+main .stats .stat-name {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+.attribution {
+  display: flex;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  padding-bottom: 0.75em;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (min-width: 1085px) {
+  main {
+    max-width: 80%;
+    max-height: 50%;
+    flex-direction: row-reverse;
+    padding: 0 0 0 2em;
+  }
+  main img {
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0;
+    padding-left: 2em;
+  }
+  main .hero-text-wrapper {
+    padding: 3em;
+  }
+  main .hero-text {
+    height: 100%;
+  }
+  main .hero-text h1 {
+    text-align: left;
+    margin-top: 2em;
+  }
+  main .hero-text .hero-paragraph {
+    text-align: left;
+    padding: 0;
+  }
+  main .stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+  main .stats .stat {
+    flex: 1 auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+    padding-top: 0em;
+  }
+  main .stats .stat .stat-heading {
+    text-align: left;
+  }
+}/*# sourceMappingURL=styles.css.map */

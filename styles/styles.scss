@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+$main-bg-color: hsl(233, 47%, 7%);
+$card-bg-color: hsl(244, 38%, 16%);
+$accent-color: hsl(277, 64%, 61%);
+$main-paragraph-color: hsla(0, 0%, 100%, 0.75);
+$stat-heading-color: hsla(0, 0%, 100%, 0.6);
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background-color: $main-bg-color;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+main {
+    background-color: $card-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1.8em;
+    padding-bottom: 1.5em;
+
+    img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+        margin-bottom: 0.5em;
+    }
+
+    .hero-text {
+        padding: 1em 0.8em;
+
+        h1 {
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 2em;
+            text-align: center;
+    
+            span {
+                color: $accent-color;
+            }
+        }
+    
+        .hero-paragraph {
+            color: $main-paragraph-color;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            line-height: 1.75em;
+            opacity: 0.75;
+            padding: 0 1.25em;
+        }
+    }
+
+    .stats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .stat-heading {
+            color: white;
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .stat-name {
+            color: $stat-heading-color;
+            text-transform: uppercase;
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            margin-top: -1em;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+.attribution { 
+    display: flex;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 0.75em;
+    a { 
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media screen and (min-width: 1085px) {
+    
+    main {
+        max-width: 80%;
+        max-height: 50%;
+        flex-direction: row-reverse;
+        padding: 0 0 0 2em;
+    
+        img {
+            width: 50%;
+            height: 100%;
+            border-radius: 0px 10px 10px 0;
+            padding-left: 2em;
+        }
+
+        .hero-text-wrapper {
+            padding: 3em;
+        }
+    
+        .hero-text {
+            height: 100%;
+            h1 {
+                text-align: left;
+                margin-top: 2em;
+            }
+        
+            .hero-paragraph {
+                text-align: left;
+                padding: 0;
+            }
+        }
+    
+        .stats {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3em;
+
+            .stat {
+                flex: 1 auto;
+                justify-content: center;
+                align-items: center;
+                padding-left: 1em;
+                padding-top: 0em;
+
+                .stat-heading {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
